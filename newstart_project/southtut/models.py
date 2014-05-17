@@ -3,7 +3,7 @@ from django.db import models
 """class Knight(models.Model):
     name = models.CharField(max_length=100)
     of_the_round_table = models.BooleanField()
-    nametest = models.CharField(max_length=120)"""
+    nametest = models.CharField(max_length=120)
 
 class feed(models.Model):
     name = models.CharField(max_length=128, unique=True)
@@ -24,3 +24,4 @@ class podcast(models.Model):
 
     def __unicode__(self):
         return self.name
+        """
