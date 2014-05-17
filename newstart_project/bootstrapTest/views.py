@@ -8,6 +8,4 @@ def index(request):
 
 def home(request):
     context = RequestContext(request)
-    feed_list = feed.objects.all()
-    context_dict = {'feeds': feed_list}
-    return render_to_response('bootstrapTest/demo-077.html', context_dict, context)
+    return render_to_response('bootstrapTest/demo-077.html', {}, context)
