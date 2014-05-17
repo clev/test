@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+{% load static %}
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en' xml:lang='en'>
+<head>
+<title>DisProjectDoe</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="{% static 'css/bootstrap.min.css' %} " rel="stylesheet" media="screen">
+<link href="{% static 'jquery-ui.1.7.1.custom/css/smoothness/jquery-ui-1.10.4.custom.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/embed_css.css' %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/jquery.ui.css' %} " rel="stylesheet" media="screen">
+
+    <!--
+<script type="text/javascript" src="{% static 'jquery-ui.1.7.1.custom/js/jquery-1.10.2.js' %}"></script>
+<script type="text/javascript" src="{% static 'jquery-ui.1.7.1.custom/js/jquery-ui-1.10.4.custom.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/js-player/jquery.jplayer.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/js-player/jquery.jplayer.inspector.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jqueryui.js' %}"></script> -->
+    <style>
+    body {
+        min-height: 2000px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .test {
+    height: 50px;
+    text-align: center;
+    }
+    .test2 {
+    height: 20px;
+    }
+    .test ul {
+        height: 100%;
+        padding-left: 0px;
+    }
+    .row {
+        height: 100%;
+    }
+    .jp-play {
+        float: left;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    .jp-mute {
+        float: left;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    ul {
+        list-style-type: none;
+        margin-bottom: 0px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    .test3 {
+    height: 40px;
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 10px;
+    }
+    .navbar-default {
+        background-color: #FFFFFF;
+    }
+    .navbar-header{
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    .navbar-header a {
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    .navbar-brand {
+        font-size: 28px;
+        text-align: center;
+    }
+    .jp-volume-slider {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .test4 {
+        font-size: 16px;
+    }
+    .padded {
+        padding-top: 21px;
+    }
+    .footer {
+        padding-top: 1000px;
+    }
+    .wrapper {
+        min-height: 100%;
+        position: relative;
+    }
+    </style>
+</head>
+
+<body>
+<header>
+
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+
+    <div id="jp_container_1">
+    <div class="navbar-header col-xs-2">
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div class="col-xs-2 test">
+        <div class="row">
+        <ul class="">
+            <li class="jp-play col-xs-6"><a href="javascript:;" class="jp-play" tabindex="1" title="play"><span class="glyphicon glyphicon-play" style="font-size:36px;"></span></a></li>
+            <li class="jp-pause col-xs-6"><a href="javascript:;" class="jp-pause" tabindex="1" title="pause"><span class="glyphicon glyphicon-pause" style="font-size:36px;"></span></a></li>
+            <li class="jp-mute col-xs-6"><a href="javascript:;" class="jp-mute" tabindex="1" title="mute"><span class="glyphicon glyphicon-volume-up" style="font-size:36px;"></span></a></li>
+            <li class="jp-unmute col-xs-6"><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"><span class="glyphicon glyphicon-volume-off" style="font-size:36px;"></span></a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="col-xs-3 test">
+    <div class="jp-volume-slider"></div>
+    </div>
+    <div class="navbar-header col-xs-5">
+      <a class="navbar-brand" href="#">overacrching thing - thing XxX</a>
+    </div>
+    <div class="col-xs-12 test2">
+    <div class="jp-progress-slider col-xs-12"></div>
+    </div>
+    <div class="col-xs-3 test3"><a>top100</a></div>
+    <div class="col-xs-3 test3"><a class="">explore</a></div>
+    <div class="col-xs-3 test3"><a class="">vote</a></div>
+    <div class="col-xs-3 test3"><a class="">submit</a></div>
+    </div>
+  </div>
+</div>
+</header>
+<div class="container test4">
+<h1>Project Name Sales Pitch</h1>
+<p>What is project name? its the best webapp ever you cock juggling thunder cunt</p>
+<p>project name connects artists and fans, centered around this one thing</p>
+<p class="padded">check out whats popular in the <a name="scrollup">top100</a></p>
+<p>connect with artists through the <a>explore</a> page</p>
+<p>see how the community is shaping the app on <a>vote</a> page</p>
+<p>submit content to the app via the <a>submit</a> page</p>
+<p>if you dont have an account yet you can <a>sign up</a> as an <a>artist</a> or <a>listener</a></p>
+<p><a href="#footer">scroll down </a></p>
+<div id="jplayer_inspector"></div>
+{% if feeds %}
+    <ul>
+        {% for x in feeds %}
+        <li>{{ x.name }}ya</li>
+            <strong>test</strong>
+        {% endfor %}
+    </ul>
+{% else %}
+    <strong>there are no feeds</strong>
+{% endif %}
+</div>
+<div class="container wrapper">
+    <p class="footer" style="padding-bottom: 150px;"><a name="footer">super ghetto fix</a></p>
+<div class="">the header is fixed. neat, right. <a href="#scrollup">scroll up</a> </div>
+</div>
+
+<script src="{% static 'jquery-ui.1.7.1.custom/js/jquery-1.10.2.js' %}"></script>
+<script src="{% static 'jquery-ui.1.7.1.custom/js/jquery-ui-1.10.4.custom.min.js' %}"></script>
+<script src="{% static 'js/js-jplayer/jquery.jplayer.min.js' %}"></script>
+<script src="{% static 'js/js-jplayer/jquery.jplayer.inspector.js' %}"></script>
+<!-- <script src="{% static 'js/jqueryui.js' %}"></script> -->
+<script src="{% static 'js/jplayercustom.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

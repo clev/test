@@ -1,0 +1,21 @@
+/* changes to default bootstrap */
+.jumbotron {
+    background-color:#ffffff;
+}
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffff00;
+}
+.navbar-fixed-top {
+    border-width: 0 0 0px;
+    top: 0;
+}
+
+.navbar-header .jp-audio {
+    height: 64px;
+}
+
+.navbar-brand {
+    font-size: 48px;
+    line-height: 48px;
+}

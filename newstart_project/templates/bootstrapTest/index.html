@@ -11,6 +11,7 @@
     <link href="{% static 'css/bootstrap.min.css' %} " rel="stylesheet" media="screen">
     <link href="{% static 'css/flat.audio.css' %} " rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css' />
+    <link href="{% static 'css/BScustom.css' %} " rel="stylesheet" media="screen">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,134 +36,107 @@
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Project name</a>
+        <div class="navbar-header col-md-3">
+          <strong><a class="navbar-brand" href="#">feedmee</a></strong>
         </div>
-<!--
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+        <div id="jp_container_1" class="col-xs-3 jp-audio">
+            <div class="jp-controls">
+                <a class="jp-play"></a>
+                <a class="jp-pause"></a>
+            </div>
+            <div class="jp-no-solution">
+                Media Player Error<br />
+                Update your browser or Flash plugin
+            </div>
         </div>
--->
-        <div id="jp_container_1" class="jp-audio nav navbar-nav">
-	        <div class="jp-controls">
-		        <a class="jp-play"></a>
-		        <a class="jp-pause"></a>
-	        </div>
-	        <div class="jp-bar">
-		        <div class="jp-seek-bar">
-
-
-
-		        </div>
-		        <div class="jp-bar">
-		        <div class="jp-play-bar"></div>
-		        </div>
-		        <div class="jp-bar">
-		        <div class="jp-duration"></div>
-		        </div>
-		        <div class="jp-title">Miaow - Hidden</div>
-	        </div>
-	        <div class="jp-no-solution">
-		        Media Player Error<br />
-		        Update your browser or Flash plugin
-	        </div>
+        <div class="col-xs-3">
+            <a href="#">volume here</a>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a><span class="glyphicon glyphicon-floppy-disk" style="font-size:36px;"></span></a></li>
-            <li><a><span class="glyphicon glyphicon-send" style="font-size:36px;"></span></a></li>
-            <li><a><span class="glyphicon glyphicon-flash" style="font-size:36px;"></span></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-
-<!--
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li class="active"><a href="./">Fixed top</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+        <div id="jp_container_1" class="col-xs-3 jp-audio">
+            <div class="jp-title">Miaow - Hidden</div>
+            <div class="jp-no-solution">
+                Media Player Error<br />
+                Update your browser or Flash plugin
+            </div>
+        </div>
+        <div id="jp_container_1" class="col-xs-12 jp-audio-new nav nav-bar">
+            <div class="jp-bar">
+                <div class="jp-seek-bar">
+                    <div class="jp-play-bar"></div>
+                    <div class="jp-duration"></div>
+                </div>
+            </div>
+            <div class="jp-no-solution">
+                Media Player Error<br />
+                Update your browser or Flash plugin
+            </div>
+        </div>
+        <ul class="nav nav-pills">
+          <li><a href="#">top100</a></li>
+          <li><a href="#">explore</a></li>
+          <li><a href="#">news</a></li>
+          <li><a href="#">vote</a></li>
+          <li><a href="#">empty</a></li>
+          <li><a href="#">submit</a></li>
+        </ul>
       </div>
     </div>
     <div class="jumbotron">
-    <div class="jp-duration"></div>
-    <div class="jp-play-bar"></div>
-    <h1>Hello, world!</h1>
-    <p><pre>
-        *
-        **
-        ***
-        ****
-        *****
-        ******
-        *******
-        ********
-        *********
-        **********
-        ***********
-        ************
-        *************
-        *************
-        *************
-        *************
-        **************
-        **************
-        ****************
-        ****************
-        ****************
-        ****************
-        ****************
-        *************
-        *******
-        *****
-        *****
-        ****
-        *****
-        ******
-        *******
-        ********
-        **********
-        ************
-        ************
-        ************
-        **********
-        *********
-        ********
-        ******
-        *****
-        ****
-        ***
-        **
-        *
-        *
-        *
+        <div class="container">
+        <h1>Hello, world!</h1>
+            <h2>Hello, world!</h2>
+        <p><pre>
+            *
+            **
+            ***
+            ****
+            *****
+            ******
+            *******
+            ********
+            *********
+            **********
+            ***********
+            ************
+            *************
+            *************
+            *************
+            *************
+            **************
+            **************
+            ****************
+            ****************
+            ****************
+            ****************
+            ****************
+            *************
+            *******
+            *****
+            *****
+            ****
+            *****
+            ******
+            *******
+            ********
+            **********
+            ************
+            ************
+            ************
+            **********
+            *********
+            ********
+            ******
+            *****
+            ****
+            ***
+            **
+            *
+            *
+            *
 
-        *
-    </pre></p>
+            *
+        </pre></p>
+        </div>
     </div>
     <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>

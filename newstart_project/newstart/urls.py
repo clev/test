@@ -8,5 +8,6 @@ urlpatterns = patterns('',
     # url(r'^$', 'newstart.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     url(r'^fixed/', include('bootstrapTest.urls')),
+    url(r'^$', 'bootstrapTest.views.home', name='home'),
     url(r'^admin/', include(admin.site.urls)),
 )
